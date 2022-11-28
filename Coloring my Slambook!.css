@@ -1,0 +1,84 @@
+body {
+    margin: 50px;
+    justify-content: center;
+    align-items: center;
+    background-image: url(images/background.jpg);
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+ .slambook {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    max-width: 100%;
+    padding: 40px 40px 40px 40px;
+    border-radius: 20px;
+    background-color: #FFCD;
+ }
+
+ .slambook_label {
+     padding: 16px 16px;
+     cursor: pointer;
+   }
+
+ .slambook_radio {
+     display: none;
+ }
+
+ .slambook_content {
+     order: 1;
+     width: 100%;
+     line-height: 2;
+     font-size: 0.9em;
+     display: none;
+     text-align: center;
+     padding: 20px;
+   }
+
+  .slambook_radio:checked + .slambook_label {
+    font-weight: bold;
+    color: #009578;
+    border-bottom: 4px solid #009578;
+    font-weight: 700;
+    font-size: 13;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+  }
+
+  .slambook_radio:checked + .slambook_label + .slambook_content {
+      display: initial;
+    }
+
+  .top-things, .fav-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    justify-items: center;
+    text-align: left;
+    padding: 70px;
+  }
+
+  .fav1, .fav2, .thing1, .thing2, .thing3, .thing4 {
+      padding: 20px;
+      border-radius: 20px;
+      width: 90%;
+      background-color: white;
+  }
+
+  h1 {
+  font-size: 40px;
+  color: green;
+  }
+
+  h2 {
+  font-size: 20px;
+  }
+
+  h3, a, ul {
+  font-size: 25px;
+  color: brown;
+  }
+
+  h2, h3 {
+  display: inline;
+  }
